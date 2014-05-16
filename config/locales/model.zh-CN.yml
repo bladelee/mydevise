@@ -8,3 +8,4 @@
         email_public: "公开 Email"
         password: "密码"
         password_confirmation: "确认密码"
+        remember_me: "记住密码"
