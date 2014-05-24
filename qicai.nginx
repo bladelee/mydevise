@@ -1,0 +1,21 @@
+
+server {
+
+        listen   80; ## listen for ipv4
+       #        listen   [::]:80 default ipv6only=on; ## listen for ipv6
+
+        server_name 218.244.130.63;
+        # server_name  42.120.1.163;
+
+        access_log  /var/log/nginx/qicai.access.log;
+
+        location / {
+                root   /var/www/qicai/website;
+                index  index.html index.htm;
+        }
+
+        location /users/ {
+                proxy_pass http://127.0.0.1:3000/
+        }
+
+}
