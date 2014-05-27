@@ -19,3 +19,12 @@ server {
         }
 
 }
+
+
+http {
+    
+        upstream unicorn {
+              server unix:/tmp/unicorn.mydevise.sock fail_timeout=0;
+        }
+
+}
