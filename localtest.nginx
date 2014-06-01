@@ -1,0 +1,30 @@
+
+server {
+
+        listen   80; ## listen for ipv4
+       #        listen   [::]:80 default ipv6only=on; ## listen for ipv6
+
+        server_name localhost;
+        # server_name  42.120.1.163;
+
+        access_log  /var/log/nginx/qicai.access.log;
+
+        location / {
+                root   /home/vagrant/website;
+                index  index.html index.htm;
+        }
+
+        location /users/ {
+                proxy_pass http://unicorn;
+        }
+
+}
+
+
+http {
+    
+        upstream unicorn {
+              server unix:/tmp/unicorn.mydevise.sock fail_timeout=0;
+        }
+
+}
