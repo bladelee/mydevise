@@ -10,7 +10,7 @@ server {
         access_log  /var/log/nginx/qicai.access.log;
 
         location / {
-                root   /home/vagrant/website;
+                root   /home/vagrant/qicaixun/website;
                 index  index.html index.htm;
         }
 

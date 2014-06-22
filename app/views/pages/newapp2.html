@@ -1,0 +1,168 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="appList" ng-controller="NewAppCtrl">
+ 
+   <h1>创建APP应用</h1>
+   <div>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+
+<legend>新建</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appname">应用名称</label>  
+  <div class="col-md-4">
+  <input id="appname" name="appname" placeholder="应用名称" class="form-control input-md" required="" type="text" ng-model="app.name">
+  <span class="help-block">输入应用名称，仅支持英文字母</span>  
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">应用类型</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
+      用户认证
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="2" type="checkbox">
+      语音对讲
+    </label>
+    <label class="checkbox-inline" for="checkboxes-2">
+      <input name="checkboxes" id="checkboxes-2" value="3" type="checkbox">
+      语音留言
+    </label>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox">应用服务器URL</label>
+  <div class="col-md-5">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox" name="prependedcheckbox" class="form-control" placeholder="http://" type="text">
+    </div>
+    <p class="help-block">应用服务器的ip地址或者域名，接口需要参考API规范，见API链接接内容</p>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes2">应用服务器类型</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes2-0">
+      <input name="checkboxes2" id="checkboxes2-0" value="1" type="checkbox">
+      用户认证
+    </label>
+  </div>
+  <div class="checkbox">
+    <label for="checkboxes2-1">
+      <input name="checkboxes2" id="checkboxes2-1" value="2" type="checkbox">
+      用户组管理
+    </label>
+  </div>
+  <div class="checkbox">
+    <label for="checkboxes2-2">
+      <input name="checkboxes2" id="checkboxes2-2" value="3" type="checkbox">
+      IM离线消息
+    </label>
+  </div>
+  <div class="checkbox">
+    <label for="checkboxes2-3">
+      <input name="checkboxes2" id="checkboxes2-3" value="4" type="checkbox">
+      获取消息记录
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">服务器白名单</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">api.rainbowio.com;8.8.8.8</textarea>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-primary" ng-click="update(app)">确定</button>
+    <button id="button2id" name="button2id" class="btn btn-inverse" ng-click="reset()">取消</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mockjax.js"></script>>
+        <script src="js/libs/angular.js"></script>
+    <script src="js/newapp.js"></script>
+    <script>
+$(document).ready(function(){
+
+$.mockjax({
+  url: '/restful/fortune',
+  data: {"Unid":1,"CustomerName":"宋江","Memo":"天魁星","Other":"黑三郎"},
+  responseTime: 750,
+  responseText: {
+    status: 'success',
+    fortune: 'Are you a turtle?',
+    "Unid":1,"CustomerName":"宋江","Memo":"天魁星","Other":"黑三郎"
+  }
+});
+//$.mockjaxClear();
+
+/* $.getJSON('/restful/fortune', function(response) {
+  if ( response.status == 'success') {
+    $('#fortune').html( 'Your fortune is: ' + response.fortune );
+  } else {
+    $('#fortune').html( 'Things do not look good, no fortune was told' );
+  }
+}); */
+
+    $.getJSON(  
+        "/restful/fortune",  
+        function(data) {  
+            var tt="";  
+            $.each(data, function(k, v) {  
+                tt += k + "：" + v + "<br/>";  
+            })  
+            $("#fortune").html(tt);  
+    });  
+
+});
+    </script>    
+  </body>
+</html>
