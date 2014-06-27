@@ -1,3 +1,5 @@
+# encoding: utf-8  
+
 require 'rails_helper'
 
 require 'spec_helper'
@@ -19,8 +21,8 @@ feature 'Sign in', :devise do
 
   def signin(email, password)
       visit new_user_session_path
-      fill_in 'Email', with: email
-      fill_in 'Password', with: password
-      click_button 'Sign in'
+      fill_in 'user[email]', with: email
+      fill_in 'user[password]', with: password
+      click_button '登  录'
   end  
 end
