@@ -1,0 +1,13 @@
+# encoding: utf-8  
+
+require "rails_helper"
+
+describe "devise/sessions/new" do
+
+    it "displays login widgets" do
+      assign(:resource, User.new)
+      render :template => "devise/sessions/new.html.erb" , :layout => "layouts/application"
+#      render
+      expect(rendered).to match ("用户")
+    end
+end
