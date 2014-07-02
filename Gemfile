@@ -7,6 +7,8 @@ gem 'rails', '3.2.17'
 
 gem 'sqlite3'
 
+gem 'mysql'
+
 gem 'devise'
 
 gem 'unicorn'
