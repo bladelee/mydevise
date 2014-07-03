@@ -24,4 +24,4 @@ production:
   database: stone
   pool: 5
   username: root
-  password: 1234
+  password: bbs1101

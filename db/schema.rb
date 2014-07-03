@@ -11,9 +11,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140507070812) do
+ActiveRecord::Schema.define(:version => 20140703131902) do
 
-  create_table "users", :force => true do |t|
+  create_table "ofgroup", :primary_key => "groupName", :force => true do |t|
+    t.string "description"
+  end
+
+  create_table "ofgroupprop", :id => false, :force => true do |t|
+    t.string "groupName", :limit => 50,  :null => false
+    t.string "name",      :limit => 100, :null => false
+    t.text   "propValue",                :null => false
+  end
+
+  create_table "ofgroupuser", :id => false, :force => true do |t|
+    t.string  "groupName",     :limit => 50,  :null => false
+    t.string  "username",      :limit => 100, :null => false
+    t.integer "administrator", :limit => 1,   :null => false
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "roles_users", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
+  end
+
+  create_table "sdkusers", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
@@ -26,6 +53,27 @@ ActiveRecord::Schema.define(:version => 20140507070812) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+  end
+
+  add_index "sdkusers", ["email"], :name => "index_sdkusers_on_email", :unique => true
+  add_index "sdkusers", ["reset_password_token"], :name => "index_sdkusers_on_reset_password_token", :unique => true
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "username",                               :null => false
+    t.string   "name"
+    t.string   "plainPassword"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
