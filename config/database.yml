@@ -19,9 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
-  encoding: utf-8
+  adapter: mysql2
+#  encoding: utf-8
   database: stone
   pool: 5
   username: root
-  password: 
+  password: 1234
