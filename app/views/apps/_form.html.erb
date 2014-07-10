@@ -1,0 +1,38 @@
+<%= form_for @app, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :type_message, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.check_box :type_message, :class => 'check_box' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :type_interphone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.check_box :type_interphone, :class => 'check_box' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :internal_auth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.check_box :internal_auth, :class => 'check_box' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :outer_auth_server, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :outer_auth_server, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                apps_path, :class => 'btn' %>
+  </div>
+<% end %>
