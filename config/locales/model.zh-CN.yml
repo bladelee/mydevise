@@ -9,3 +9,11 @@
         password: "密码"
         password_confirmation: "确认密码"
         remember_me: "记住密码"
+      sdkuser:
+        name: "名字"
+        login: "用户名"
+        email: "电子邮件 Email"
+        email_public: "公开 Email"
+        password: "密码"
+        password_confirmation: "确认密码"
+        remember_me: "记住密码"
