@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html class="wf-museosans-i3-active wf-museosans-i5-active wf-museosans-i7-active wf-museosans-n3-active wf-museosans-n5-active wf-museosans-n7-active wf-active"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>DigitalOcean Control Panel</title>
+<script src="support_files/s.js" async="" type="text/javascript"></script><script src="support_files/ga.js" async="" type="text/javascript"></script><script async="" type="text/javascript" src="support_files/vbr8xjq.js"></script><script>
+  //<![CDATA[
+    (function() {
+      var config = {
+        kitId: 'vbr8xjq',
+        scriptTimeout: 3000
+      };
+      var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+  //]]>
+</script>
+
+<link href="support_files/normalize-f2f50cf9ffdd9e826a5eb92d93d528bd.css" media="screen" rel="stylesheet" type="text/css">
+<link href="support_files/application-cbcaf2e6c4544175fc1003737e565728.css" media="screen" rel="stylesheet" type="text/css">
+<link href="support_files/select2-6b9f2b7ccbe6a6b2ced0d22b0ec77f5d.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style><link href="support_files/d.css" rel="stylesheet"><script src="support_files/application-ca90e932faa0edb95e3292651f3db30c.js" type="text/javascript"></script><style type="text/css"></style>
+<script src="support_files/select2-c93e4d6c601e5df746f715da35e03fe8.js" type="text/javascript"></script>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="lTy911DKDYHjgEFdv6t0r1ClmNLGICOJT+50Hw7BkkA=" name="csrf-token">
+<script type="text/javascript">
+  var _user_id = 407242; var _sift = _sift || []; _sift.push(['_setAccount', '96ba7c9ef0']); _sift.push(['_setUserId', _user_id]); _sift.push(['_trackPageview']); (function() { function ls() { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.siftscience.com/s.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); } if (window.attachEvent) { window.attachEvent('onload', ls); } else { window.addEventListener('load', ls, false); }})();
+</script>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26573244-1']);
+  _gaq.push(['_setDomainName', 'digitalocean.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  //<![CDATA[
+    var sessionActiveTimeout = new Date(1405748428000);
+    var sudoTarget;
+  //]]>
+</script>
+
+</head>
+<body class="control_panel index support">
+<div id="container">
+<div id="content">
+<div class="contents">
+<aside id="sidebar">
+<div id="logo-wrapper">
+<a href="https://cloud.digitalocean.com/droplets" id="logo">DigitalOcean</a>
+<a data-original-title="We have updated our Terms of Service" href="https://cloud.digitalocean.com/settings/notifications" data-placement="right" data-toggle="tooltip" id="notification-count" title=""><span>1</span>
+</a></div>
+<a href="https://cloud.digitalocean.com/droplets/new" id="create_droplet">Create</a>
+<ul>
+<li class="droplets">
+<a href="https://cloud.digitalocean.com/droplets">Droplets</a>
+</li>
+<li class="images">
+<a href="https://cloud.digitalocean.com/images">Images</a>
+</li>
+<li class="ssh_keys">
+<a href="https://cloud.digitalocean.com/ssh_keys">SSH Keys</a>
+</li>
+<li class="billing">
+<a href="https://cloud.digitalocean.com/billing">Billing</a>
+</li>
+<li class="current support">
+<a href="https://cloud.digitalocean.com/support">Support</a>
+</li>
+<li class="in_labs dns">
+<a href="https://cloud.digitalocean.com/domains">DNS</a>
+</li>
+<li class="api">
+<a href="https://cloud.digitalocean.com/settings/applications">Apps &amp; API</a>
+</li>
+</ul>
+<!--
+<ul id='labs'>
+<li class='labs'>LABS</li>
+</ul>
+-->
+<div id="current_user">
+<a data-original-title="Settings" href="https://cloud.digitalocean.com/settings" data-toggle="tooltip" id="user-settings" title=""><span class="icon">Settings</span>
+</a><a data-original-title="Logout: bj_liwei@yahoo.com" href="https://cloud.digitalocean.com/logout" data-toggle="tooltip" id="user-logout" title=""><span class="icon">Logout</span>
+</a></div>
+</aside>
+
+<div id="main">
+<header>
+<span class="icon"></span>
+
+<h1>Support</h1>
+<a href="#new_ticket" class="button" data-focus="#ticket_topic" data-toggle="collapse">New Ticket</a>
+
+</header>
+
+<div class="collapse" id="new_ticket">
+<form accept-charset="UTF-8" action="/tickets" class="new_ticket" data-validate="true" id="new_ticket" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="lTy911DKDYHjgEFdv6t0r1ClmNLGICOJT+50Hw7BkkA=" type="hidden"></div><fieldset><div id="ticket_topic_field">
+<div id="ticket_topic_suggestion_indicator"></div>
+<input data-suggest="true" data-validation="required" id="ticket_topic" name="ticket[topic]" placeholder="Subject" size="30" title="Please provide a subject for the ticket." type="text">
+</div>
+<div class="styled-select">
+<select id="ticket_droplet_id" name="ticket[droplet_id]"><option selected="selected" value="">Affected Droplet</option>
+</select>
+</div>
+<div id="ticket_topic_suggestions"></div>
+<textarea cols="40" id="ticket_content" name="ticket[content]" placeholder="Please detail your issue or question..." rows="20"></textarea>
+<input name="ticket[is_critical]" value="0" type="hidden"><input id="ticket_is_critical" name="ticket[is_critical]" value="1" type="checkbox">
+<label for="ticket_is_critical">If your ticket is truly critical, click here and we will dispatch a notification to on-call staff right away.</label>
+<input class="button" name="commit" value="Create Ticket" type="submit">
+</fieldset></form>
+
+
+</div>
+<h2 class="section-header open_tickets">Open Tickets</h2>
+<ul class="tickets">
+<li class="ticket">
+<div class="content">
+<h4 class="title"><a href="#ticket-207715" class="view collapsed" data-toggle="collapse">cant not create droplet</a></h4>
+<div class="actions">
+<a href="#ticket-207715" class="reply collapsed" data-toggle="collapse">Reply</a>
+<form action="/support/close_ticket/207715" class="button_to" method="post"><div><input class="btn close" value="Close" type="submit"><input name="authenticity_token" value="lTy911DKDYHjgEFdv6t0r1ClmNLGICOJT+50Hw7BkkA=" type="hidden"></div></form>
+</div>
+<p class="created_at">
+Ticket #<strong data-original-title="This is your ticket identification number" data-toggle="tooltip" title="">207715</strong> 
+- Created on 03/04/14 at 15:42
+- Last reply 5 Months ago by 
+<span class="label">james</span>
+</p>
+</div>
+<div class="collapse" id="ticket-207715">
+<div class="post_reply">
+<h4>Post Reply</h4>
+<div class="styled-form">
+<form accept-charset="UTF-8" action="/tickets/207715/replies" class="simple_form new_reply" id="new_reply" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="lTy911DKDYHjgEFdv6t0r1ClmNLGICOJT+50Hw7BkkA=" type="hidden"></div><div class="control-group text required"><div class="controls"><textarea class="text required" cols="40" id="reply_content" name="reply[content]" placeholder="Enter your message here" rows="20"></textarea></div></div>
+<input name="commit" value="Submit Reply" type="submit">
+</form>
+
+</div>
+
+</div>
+<ul class="replies">
+<li class="received reply">
+<div class="message">
+<p>Hello,</p>
+
+<p>I'm glad everything is resolved in this ticket, if you have any further questions please let us know.</p>
+
+<p>Regards,
+<br>DigitalOcean Support</p>
+<span class="posted_on">Posted on 03/04/14 at 21:22</span>
+</div>
+<div class="author">
+<img alt="Gravatar" src="support_files/7811bfb65ec946f1308127807b32f033.png" height="90px" width="90px">
+<span class="name">James</span>
+</div>
+</li>
+<li class="reply sent">
+<div class="message">
+<p>Yes.The machine had been active.  
+<br>The start log is "Create 	about 4 hours ago 	40 minutes 23 seconds "</p>
+<span class="posted_on">Posted on 03/04/14 at 18:45</span>
+</div>
+<div class="author">
+<img alt="Gravatar" src="support_files/52ae3aef2ff4ad20dd35bfa76ab043b7.png" height="90px" width="90px">
+<span class="name">Bj Liwei</span>
+</div>
+</li>
+<li class="received reply">
+<div class="message">
+<p>It looks like the servers created can you confirm?</p>
+
+<p>-Josh</p>
+<span class="posted_on">Posted on 03/04/14 at 18:24</span>
+</div>
+<div class="author">
+<img alt="Gravatar" src="support_files/55bddb47e79d5e7180c87302635634f9.png" height="90px" width="90px">
+<span class="name">Josh</span>
+</div>
+</li>
+<li class="reply sent">
+<div class="message">
+<p>My droplet status have been at "NEW".status . </p>
+<span class="posted_on">Posted on 03/04/14 at 15:45</span>
+</div>
+<div class="author">
+<img alt="Gravatar" src="support_files/52ae3aef2ff4ad20dd35bfa76ab043b7.png" height="90px" width="90px">
+<span class="name">Bj Liwei</span>
+</div>
+</li>
+<li class="reply sent">
+<div class="message">
+<p>Two droplets instances have not being created  after ten  minutes. Pls help me deleting the two droplets . </p>
+<span class="posted_on">Posted on 03/04/14 at 15:42</span>
+</div>
+<div class="author">
+<img alt="Gravatar" src="support_files/52ae3aef2ff4ad20dd35bfa76ab043b7.png" height="90px" width="90px">
+<span class="name">Bj Liwei</span>
+</div>
+</li>
+</ul>
+
+</div>
+
+</li>
+</ul>
+
+  <h2 class="section-header faq">Frequently Asked Questions</h2>
+
+  <section class="help-section">
+    <div class="wrapper-full">
+      <aside class="help-nav nav nav-tabs">
+        <ul>
+            <li><a href="#api" class="" data-toggle="tab">Api</a></li>
+            <li><a href="#general" class="" data-toggle="tab">General</a></li>
+            <li><a href="#policy" class="" data-toggle="tab">Policy</a></li>
+            <li><a href="#billing" class="active" data-toggle="tab">Billing</a></li>
+            <li><a href="#account" class="" data-toggle="tab">Account</a></li>
+            <li><a href="#referral_program" class="" data-toggle="tab">Referral Program</a></li>
+            <li><a href="#technical-general" class="" data-toggle="tab">Technical   General</a></li>
+            <li><a href="#technical-setup" class="" data-toggle="tab">Technical   Setup</a></li>
+            <li><a href="#technical-control_panel" class="" data-toggle="tab">Technical   Control Panel</a></li>
+            <li><a href="#technical-backup" class="" data-toggle="tab">Technical   Backup</a></li>
+            <li><a href="#IPv6" class="" data-toggle="tab">I Pv6</a></li>
+            <li><a href="#getting_started-setup" class="" data-toggle="tab">Getting Started   Setup</a></li>
+            <li><a href="#getting_started-learn" class="" data-toggle="tab">Getting Started   Learn</a></li>
+            <li><a href="#community" class="" data-toggle="tab">Community</a></li>
+        </ul>
+      </aside>
+
+      <section class="help-content tab-content">
+          <div class="tab-pane " id="api">
+            <h2 id="">Api Questions</h2>
+              <h3><p>Is there a way to recover my API key once it's hidden?</p>
+</h3>
+              <p></p><p>No — the API Key is only shown once. However, you can regenerate a new one as many times as needed.</p>
+<p></p>
+              <h3><p>How Do I Get My API Credentials?</p>
+</h3>
+              <p></p><p>You can get your API credentials from the <a href="https://cloud.digitalocean.com/api_access">API section</a> of the control panel</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="general">
+            <h2 id="">General Questions</h2>
+              <h3><p>Who is DigitalOcean for?</p>
+</h3>
+              <p></p><p>DigitalOcean is a platform created for 
+developers who need to launch and scale their applications quickly. 
+Additionally, DigitalOcean provides the perfect environment for 
+developers to play around on the command line and learn more about 
+customizing their own servers.</p>
+<p></p>
+              <h3><p>Do you have a referral program?</p>
+</h3>
+              <p></p><p>Yes we do! Customers can refer their friends and earn $25 in account credits or payout. <a href="https://digitalocean.com/help/referral-program/">Click here</a> to learn more about how our referral program works.</p>
+<p></p>
+              <h3><p>What are DigitalOcean's key advantages?</p>
+</h3>
+              <p></p><p>DigitalOcean is a simple and fast cloud hosting 
+provider built for developers. Customers can create a cloud server in 55
+ seconds, and pricing plans start at only $5 per month for 512MB of RAM,
+ 20GB SSD, 1 CPU, and 1TB Transfer.</p>
+
+<p>The DigitalOcean control panel interface is simple and intuitive, 
+which power users can replicate on a larger scale with the company’s 
+API. DigitalOcean uses KVM virtualization and additionally <a href="https://digitalocean.com/community/">hosts a library of helpful walkthroughs and tutorials</a> that cover server configuration and optimization.</p>
+<p></p>
+              <h3><p>What advantages does an SSD cloud server have over a shared hosting plan?</p>
+</h3>
+              <p></p><p>DigitalOcean users can have their personal cloud
+ server spun up and active in 55 seconds. Each box comes with full root 
+access, a choice of Linux distributions, and the ability to customize 
+the setup.</p>
+<p></p>
+              <h3><p>What advantages does an SSD cloud server have over a dedicated server?</p>
+</h3>
+              <p></p><p>DigitalOcean allows on the fly scaling—a task 
+that is much more difficult on a dedicated box. Changing the amount of 
+RAM on a box can be done with a simple reboot, while expanding the disk 
+size takes less than an hour. The same process can take hours or days 
+with a dedicated setup.</p>
+<p></p>
+              <h3><p>The prices are awesomely low! Does DigitalOcean make a profit?</p>
+</h3>
+              <p></p><p>We are able to make enough profit to keep the lights on :)</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="policy">
+            <h2 id="">Policy Questions</h2>
+              <h3><p>What is your SLA?</p>
+</h3>
+              <p></p><p>Digital Ocean provides a 99.99% Uptime SLA. Lost time is refunded back to your account at the hourly rate incurred.</p>
+<p></p>
+              <h3><p>Do you allow TOR exit nodes?</p>
+</h3>
+              <p></p><p>Although we do not specifically disallow TOR 
+exit nodes, as the account holder you are responsible for all the 
+traffic going through your droplet (including traffic that an exit node 
+may generate). All violations of our Terms of Service must be addressed 
+as soon as possible after any issue is emailed to you.</p>
+
+<p>Also be aware that we do not allow some of the traffic types that 
+come out of a typical TOR exit node (torrents, spam, ssh probes, hacking
+ attempts, botnets, ddos, etc).</p>
+
+<p>If you are unable to stop this sort of traffic, please reconsider 
+running a TOR exit node as it may lead to your account suspension or 
+termination.</p>
+<p></p>
+              <h3><p>Where are your datacenters located?</p>
+</h3>
+              <p></p><p>We have datacenters located in the NYC area 
+(located in the Equinix and Telx datacenters), San Francisco (Telx), 
+Singapore (Equinix), and in Amsterdam (TelecityGroup). We have multiple 
+private peering uplink providers including Level3, NTT, nLayer, Tinet, 
+TATA, and Telia. We are directly peered to hundreds of other providers 
+on public exchange points.</p>
+<p></p>
+              <h3><p>Are your datacenters certified / PCI compliant?</p>
+</h3>
+              <p></p><p>All of our datacenters have been certified by national and/or international security standards.</p>
+
+<ul>
+<li>Our NYC1 facility is SSAE16 SOC-1 Type II certified.</li>
+<li>Our AMS1 and AMS2 facilities are ISO27001:2005 and ISO9001 certified.</li>
+<li>Our SFO1 facility is SSAE16 SOC-1 Type II certified.</li>
+<li>Our NYC2 facility is SSAE16 SOC-2 Type II certified.</li>
+<li>Our SGP1 facility is ISO27001:2005 certified.</li>
+</ul>
+<p></p>
+              <h3><p>Do you charge for bandwidth?</p>
+</h3>
+              <p></p><p>Yes. Plans start with 1TB per month and increase
+ incrementally. Once the monthly transfer limit has been exceeded, the 
+cost of bandwidth is $0.02 per GB over the limit.</p>
+<p></p>
+              <h3><p>Do you have a speed test?</p>
+</h3>
+              <p></p><p>Below are links to speed tests of our NYC and AMS and SFO network:</p>
+
+<ul>
+<li><a href="http://speedtest-ny1.digitalocean.com/">New York 1</a></li>
+<li><a href="http://speedtest-nyc2.digitalocean.com/">New York 2</a></li>
+<li><a href="http://speedtest-sfo1.digitalocean.com/">San Francisco 1</a></li>
+<li><a href="http://speedtest-ams1.digitalocean.com/">Amsterdam 1</a></li>
+<li><a href="http://speedtest-ams2.digitalocean.com/">Amsterdam 2</a></li>
+<li><a href="http://speedtest-sgp1.digitalocean.com/">Singapore 1</a></li>
+<li><a href="http://speedtest-lon1.digitalocean.com/">London 1</a></li>
+</ul>
+<p></p>
+              <h3><p>Do you offer managed hosting?</p>
+</h3>
+              <p></p><p>No. DigitalOcean is completely unmanaged — if 
+you experience issues with your server, you can reach to support via a 
+ticket. However, for server setup questions and specific details on 
+debugging server software, we recommend reaching out on our <a href="https://digitalocean.com/community/questions">community forum</a> or IRC channel.</p>
+<p></p>
+              <h3><p>What is your policy on TOR?</p>
+</h3>
+              <p></p><p>You will be responsible for the sub-users that 
+connect to your TOR service. If there is abuse that is a result of your 
+sub-users, we do not have a way to tell the difference, so it will be as
+ if your account was abusive. This will get flagged by our backend and 
+lead to your account being suspended and virtual servers destroyed. </p>
+
+<p>We do not recommend running open services where any user can connect 
+and possibly be abusive, as it will all fall under your account and can 
+lead to service interruptions for you. </p>
+
+<p>We also do not restrict the installation of software, but you are 
+responsible for how it is used and how freely available you make the 
+service."</p>
+<p></p>
+          </div>
+          <div class="tab-pane active" id="billing">
+            <h2 id="">Billing Questions</h2>
+              <h3><p>How do I choose between monthly and hourly billing?</p>
+</h3>
+              <p></p><p>Each Droplet is billed per hour up to its 
+monthly cap. The monthly cost of your Droplet is calculated by running 
+the hourly rate for 28 days (672 hours). Once you reach that amount 
+(e.g. $10/mo for a 1GB VPS), you will not be charged for your server's 
+additional runtime. This allows you to destroy your server before the 
+maximum monthly charge and pay only for what you use.</p>
+<p></p>
+              <h3><p>Am I charged when I enter a credit card?</p>
+</h3>
+              <p></p><p>No — when you enter a card, we only run an 
+authorization charge of $1.23. This authorization is refunded back to 
+your card by your bank in no more than 30 days. Your card is charged at 
+the end of the monthly billing cycle.</p>
+<p></p>
+              <h3><p>How do I apply a promo code?</p>
+</h3>
+              <p></p><p>As a new customer you can easily apply a promo code to your account from the Payment Methods page <a href="https://cloud.digitalocean.com/user_payment_profiles">here</a>.
+ Enter the case sensitive code in the promo code field. Once entered 
+correctly, the credits will automatically apply to your account. In 
+order to spin up your first droplet you must also have a valid credit 
+card on your account or make a PayPal deposit. Keep in mind that we only
+ allow one promo code per account, so if you’ve redeemed one in the past
+ you may not add another. To see your promo code history please visit 
+your <a href="https://cloud.digitalocean.com/billing">billing page</a>.</p>
+<p></p>
+              <h3><p>How am I billed?</p>
+</h3>
+              <p></p><p>Each droplet is billed per hour up to its 
+monthly cap. You can choose to fund your account via PayPal or you can 
+pay your monthly bill via credit card.</p>
+<p></p>
+              <h3><p>Do you accept virtual, electron, debit or prepaid credit cards?</p>
+</h3>
+              <p></p><p>We apologize for the inconvenience, but because 
+we receive a large amount of fraudulent sign-ups we’ve had to restrict 
+the use of virtual/electron and debit cards in some geographies. We made
+ this decision after finding that up to 80% of abusive sign-ups used 
+these types of cards. If you would like to pay with one of these cards, 
+we recommend using the card to send a payment via PayPal.</p>
+<p></p>
+              <h3><p>My credit card expired or was declined and the payment failed. How do I fix it to prevent my account from being suspended?</p>
+</h3>
+              <p></p><p>You can resolve this issue by adding a new 
+credit card to your account, or by making a deposit via PayPal. As we do
+ not allow credit cards to be edited, you will need to delete the old 
+credit card and add a new one. Our billing system will also send you 
+payment reminders before any actions such as service suspension are 
+taken on your account.</p>
+<p></p>
+              <h3><p>Do you offer refunds?</p>
+</h3>
+              <p></p><p>No, we do not offer refunds. If there are extenuating circumstances, please <a href="https://cloud.digitalocean.com/support">open up a ticket</a> with our support team.</p>
+<p></p>
+              <h3><p>What form of payments do you accept?</p>
+</h3>
+              <p></p><p>We accept Visa, MasterCard, American Express, Discover, and PayPal.</p>
+<p></p>
+              <h3><p>Can I pay in advance?</p>
+</h3>
+              <p></p><p>We do not currently accept pre-payment, but you 
+can add additional credit to your account at anytime by sending in a 
+PayPal payment.</p>
+<p></p>
+              <h3><p>How am I charged if I have both PayPal and a credit card on file?</p>
+</h3>
+              <p></p><p>At the end of the month, if there is a balance 
+on your account, our billing system will attempt to charge any credit 
+cards that you have on file on the 1st of the month. If you’d like to 
+use PayPal instead, please make sure your account has enough credit at 
+all times to cover your monthly billings.</p>
+<p></p>
+              <h3><p>Can I transfer credits from one account to another?</p>
+</h3>
+              <p></p><p>No - credits cannot be transferred between accounts.</p>
+<p></p>
+              <h3><p>Do I have to pay the cost of the server every time I create a new one?</p>
+</h3>
+              <p></p><p>No — you only need to pay for 1 hour of usage. 
+Spinning up a new 512MB server just to test something for a couple of 
+minutes will only cost you $0.007</p>
+<p></p>
+              <h3><p>Can you charge my card on a specific date?</p>
+</h3>
+              <p></p><p>We automatically attempt to charge your credit card on the 1st of each month. After you become a <a href="https://digitalocean.com/help/account">verified customer</a>,
+ you can go to the billing page and pay your outstanding balance at any 
+time by clicking the “Pay now” button that appears underneath your 
+balance.</p>
+<p></p>
+              <h3><p>If I have multiple credit cards on file, which one do you charge?</p>
+</h3>
+              <p></p><p>Our billing system will attempt to charge your 
+cards starting with the most recently added card. If there is a specific
+ card you'd like to use for payment, please make sure it is the most 
+recently added card or delete any other cards from your account.</p>
+<p></p>
+              <h3><p>I submitted a PayPal payment. Why hasn't my balance been updated?</p>
+</h3>
+              <p></p><p>Balances are not updated in real time. Once you 
+submit your PayPal payment it gets processed and added to our system. 
+You should see the updated balance in a few hours.</p>
+<p></p>
+              <h3><p>Am I charged while my droplet is in a powered-off state?</p>
+</h3>
+              <p></p><p>Yes. Your diskspace, CPU, RAM, and IP address 
+are all reserved while your droplet is powered off. If you want to save a
+ droplet for future use take a snapshot of it and then destroy it. 
+You'll be able to create a new droplet from the snapshot image anytime 
+to bring it back online.</p>
+<p></p>
+              <h3><p>When do you charge my credit card?</p>
+</h3>
+              <p></p><p>We charge your credit card on the 1st day of each month after usage.</p>
+<p></p>
+              <h3><p>I have a credit, why can’t I create a droplet?</p>
+</h3>
+              <p></p><p>In order to use the credit you’ll need to 
+activate your account by adding a valid credit card to your account or 
+prepay via PayPal.</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="account">
+            <h2 id="">Account Questions</h2>
+              <h3><p>How do I become a verified user?</p>
+</h3>
+              <p></p><p>This process is automatic and happens usually 
+within 30 days of opening and using your account. After you become a 
+verified user, you will be able to manually charge your credit card by 
+using the “Pay now” button on your billing page and we will periodically
+ increase your droplet limit.</p>
+<p></p>
+              <h3><p>I lost the welcome email with my account password / I forgot my password. Can you resend it?</p>
+</h3>
+              <p></p><p>For security purposes we never resend your 
+password. If you have forgotten it simply navigate to the login page and
+ click on the “Forgot Password” link. We’ll then send you an email with 
+instructions on how to reset your password.</p>
+<p></p>
+              <h3><p>How can I increase my droplet limit?</p>
+</h3>
+              <p></p><p>You can easily raise your droplet limit by opening up a <a href="https://cloud.digitalocean.com/support">support ticket</a> with our team. After review, we’ll be able to update your limit.</p>
+<p></p>
+              <h3><p>How can I change my email address?</p>
+</h3>
+              <p></p><p>Please click on the "Gear" (Settings) Icon in the bottom left of the navigation bar. This will take you to your <a href="https://cloud.digitalocean.com/settings">Settings page</a>.</p>
+
+<p>From there, simply click on your email address and you will be prompted to enter your new email address.</p>
+
+<p>A confirmation will be sent to your old email address to confirm the change.</p>
+<p></p>
+              <h3><p>How can I upgrade my account to a larger droplet? Are there any fees associated with upgrading?</p>
+</h3>
+              <p></p><p>You can upgrade your account at any time by 
+resizing your droplet. There are no fees associated with this, and you 
+can do this yourself by powering off your droplet and choosing “resize” 
+in the control panel, which will bring up a list of available sizes for 
+you to select from.</p>
+<p></p>
+              <h3><p>What do I do if I lose my phone and I have two-factor authentication enabled?</p>
+</h3>
+              <p></p><p>You would need to open a ticket by emailing support@digitalocean.com<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script> with the email address with which you registered for an 
+account and our support staff will take you through a verification 
+process.</p>
+<p></p>
+              <h3><p>I need to open multiple accounts for business and personal use. How do I do that?</p>
+</h3>
+              <p></p><p>Prior to opening a second account please <a href="https://cloud.digitalocean.com/support">open a ticket</a> with our support team. This will help us quickly verify your new account.</p>
+<p></p>
+              <h3><p>Why didn't I receive a root password via Email?</p>
+</h3>
+              <p></p><p>Please check your spam folder in case the email 
+was mis-delivered. You can also reset your Droplet's root password by 
+click on "Access" and then "Password Reset". Alternatively, instead of 
+using a password, you can set up SSH keys for your server which would 
+eliminate the need for a password altogether. You can find more 
+information <a href="https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets">here</a>.</p>
+<p></p>
+              <h3><p>Why are root passwords emailed?</p>
+</h3>
+              <p></p><p>The root password is sent via email because it is the easiest and fastest way to get a user online and running a virtual server.</p>
+
+<p>Upon logging in for the first time with the root password we require 
+that the password be changed. We strongly recommend updating to a strong
+  password. Here are a few guidelines:</p>
+
+<ol>
+<li>Create a password that has eight or more characters. The longer the password the better.</li>
+<li>Use a string of random words.</li>
+<li>Add numbers and/or punctuation to your password.</li>
+<li>Mix upper and lowercase</li>
+<li>Use different passwords for different servers</li>
+</ol>
+
+<p>Alternatively, you can use SSH keys to access the server. You can add
+ SSH-keys to the control panel and then deploy new servers with the SSH 
+key installed under the root user.</p>
+
+<p>See this community article: <a href="https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets">How to Use SSH Keys with DigitalOcean Droplets</a></p>
+
+<p>When using SSH-keys, no root password is set.</p>
+
+<p>We also recommend updating the ssh config when using SSH keys to only
+ allow SSH logins via root with the following config update:
+PermitRootLogin without-password</p>
+
+<p>For more information, please see this article: <a href="https://www.digitalocean.com/community/articles/how-to-set-up-ssh-keys--2">How to Set Up SSH Keys</a></p>
+<p></p>
+              <h3><p>How do I cancel my account?</p>
+</h3>
+              <p></p><p>You can cancel your account anytime through the 
+control panel, under the settings tab. First, destroy any droplets 
+active on your account, resolve any outstanding billing and then click 
+“Deactivate Account.”</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="referral_program">
+            <h2 id="">Referral Program Questions</h2>
+              <h3><p>How do I earn the account credit?</p>
+</h3>
+              <p></p><p>Account credit is earned within 30 days after 
+your friend has totaled $25 in billings. There is no limit to how much 
+you can earn.</p>
+<p></p>
+              <h3><p>When do I receive my account credit?</p>
+</h3>
+              <p></p><p>You will receive your account credits after your
+ referral completes $25 of billing. This typically occurs no later than 
+the 15th of the month.</p>
+<p></p>
+              <h3><p>What is a pending referral?</p>
+</h3>
+              <p></p><p>A pending referral means that a user has signed 
+up with your link, but has not yet met the spending threshold for the 
+payout to occur.</p>
+<p></p>
+              <h3><p>How do I get started?</p>
+</h3>
+              <p></p><p>Customers will be provided with a referral code 
+link that can be utilized for endorsing our services while tracking 
+referrals and commissions. The referral code link can be accessed from 
+the Settings Page within the DigitalOcean control panel.</p>
+<p></p>
+              <h3><p>How will referrals be awarded?</p>
+</h3>
+              <p></p><p>Referrals will be awarded via account credit.</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="technical-general">
+            <h2 id="">Technical   General Questions</h2>
+              <h3><p>Do you host DNS?</p>
+</h3>
+              <p></p><p>Yes — you can set up your site using our domain manager. See <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-host-name-with-digitalocean">this community article</a> for more details.</p>
+<p></p>
+              <h3><p>What kind of Network does DigitalOcean run on?</p>
+</h3>
+              <p></p><p>All DigitalOcean physical nodes are connected 
+via gigabit ethernet to switches, which are uplinked to our aggregators 
+and core routers. All core routers are uplinked via 10-gigE uplinks to 
+providers.</p>
+<p></p>
+              <h3><p>Do you offer backups?</p>
+</h3>
+              <p></p><p>DigitalOcean offers two kinds of backups: 
+snapshots and backups. Snapshots can be done at any time, while 
+automated backups runs every couple of days.</p>
+<p></p>
+              <h3><p>What kind of Virtualization do you use?</p>
+</h3>
+              <p></p><p>We use KVM.</p>
+<p></p>
+              <h3><p>What type of filesystem formats do you use?</p>
+</h3>
+              <p></p><p>We are using LVM and QCOW in all datacenters except for Singapore 1, which uses RAW.</p>
+<p></p>
+              <h3><p>What is a droplet?</p>
+</h3>
+              <p></p><p>DigitalOcean calls its virtual servers, droplets; each droplet that you spin up is a new virtual server for your personal use.</p>
+<p></p>
+              <h3><p>Do you provide console access?</p>
+</h3>
+              <p></p><p>We provide console access via VNC through our control panel.</p>
+<p></p>
+              <h3><p>What is the CPU speed of my droplet?</p>
+</h3>
+              <p></p><p>We use server-grade Intel Hexcore processors 
+between 2.0 GHz and 3.0 GHz. To view the clock speed and other details 
+of the CPU on the hypervisor you are assigned, run this command on the 
+command line: cat /proc/cpuinfo</p>
+<p></p>
+              <h3><p>Do you have a default firewall enabled?</p>
+</h3>
+              <p></p><p>No — but we encourage our users to enable one once their droplet is setup.</p>
+<p></p>
+              <h3><p>Do you offer Windows servers?</p>
+</h3>
+              <p></p><p>We do not provide Windows-based servers.</p>
+<p></p>
+              <h3><p>Can I get a custom plan of CPU, RAM, or Disk / just increase SSD space?</p>
+</h3>
+              <p></p><p>We do not currently support the ability to 
+create custom plans where resources can be increased independently. This
+ means we cannot currently add additional SSD / disk space capacity to a
+ plan.</p>
+
+<p>The sizes that we provide logically bring resources together and 
+allow us to most effectively distribute virtual machines across the 
+backend (as well as deliver the most competitive price to our 
+customers).</p>
+
+<p>The sizes available are found on our <a href="https://www.digitalocean.com/pricing">Pricing page</a>.</p>
+<p></p>
+              <h3><p>Do you have an API?</p>
+</h3>
+              <p></p><p>Yes — The API allows you to create and destroy droplets, as well as replicate all of the droplet control panel functionality.</p>
+<p></p>
+              <h3><p>What processor models does DigitalOcean run on?</p>
+</h3>
+              <p></p><p>Intel Hex-Core CPUs</p>
+<p></p>
+              <h3><p>How can I request a new feature?</p>
+</h3>
+              <p></p><p>As we're experiencing extreme growth, our 
+engineering team is working as quickly as possible on a variety of known
+ issues as well as feature requests.</p>
+
+<p>We are excited to hear feedback from you. To submit feature requests and suggestions, please visit our <a href="http://digitalocean.uservoice.com/forums/136585-digital-ocean">developer's forum</a> where you can add, discuss, and vote on features.</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="technical-setup">
+            <h2 id="">Technical   Setup Questions</h2>
+              <h3><p>What are your name servers?</p>
+</h3>
+              <p></p><p>If you are setting up your name servers on your domain registration – our Name Servers are:</p>
+
+<ul>
+<li>ns1.digitalocean.com</li>
+<li>ns2.digitalocean.com</li>
+<li>ns3.digitalocean.com</li>
+</ul>
+
+<p>See this article for additional information: <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-host-name-with-digitalocean">How to Set Up a Host Name with DigitalOcean</a></p>
+<p></p>
+              <h3><p>How do I set up Two-Factor Authentication on my DigitalOcean account?</p>
+</h3>
+              <p></p><p>To begin with Two-Factor Authentication, you 
+will need to download the Google Authenticator app for your mobile 
+phone. Your phone will have to have the correct date, time, and timezone
+ to work correctly.</p>
+
+<p>Log into your DigitalOcean account and click the "gear" icon in the navigation to open the <a href="https://cloud.digitalocean.com/settings">settings page</a>. Click the green 'Enable 2-factor authentication' button.</p>
+
+<p>On this page, select your phone number's country, and fill in your phone number. Then click the blue submit button.</p>
+
+<p>You should get a text message from Google on that number. Put the 
+code from that text into the 'enter pin' box and click the blue submit 
+button. Then you will be presented with a QR code.</p>
+
+<p>On your mobile device, load the Google Authenticator app and add a 
+new account. There is no need to enter any information, just manually 
+add a new account with the 'scan a barcode' feature. Hold your phone's 
+camera up to your computer screen to capture an image of the QR Code.</p>
+
+<p>A code will then be displayed on your screen. The code is time 
+sensitive; take that 6-digit code and enter it into our website in the 
+'Enter pin' box and then click the blue "Submit" button. That's all that
+ you should need to enable Two Factor Authentication.</p>
+
+<p>If you have any problems, please make sure that your phone is set to 
+the correct date, time, and time zone. If that's not the issue, <a href="https://cloud.digitalocean.com/support">open a ticket</a> and let us know exactly at what step you are having trouble and we'll work together to resolve it.</p>
+<p></p>
+              <h3><p>Do you support adding multiple IPs per virtual server? How can I get an additional IP?</p>
+</h3>
+              <p></p><p>We do not currently provide the ability to add 
+more than one public IPv4 IP address per virtual server. This is due to 
+the worldwide limited availability of remaining IPv4 address space. We 
+are working on implementing IPv6 as soon as we can, and we’ll be sure to
+ update you once it’s in place. We apologize for any inconvenience.</p>
+<p></p>
+              <h3><p>Do you provide cPanel?</p>
+</h3>
+              <p></p><p>We do not license cPanel; however, we do have an article on how to install it: <a href="https://www.digitalocean.com/community/articles/how-to-install-cpanel-on-a-virtual-server-running-centos-6">How to Install cPanel on a Virtual Server Running CentOS 6</a></p>
+<p></p>
+              <h3><p>How do I set up DNS?</p>
+</h3>
+              <p></p><p>Check out this community article: <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-host-name-with-digitalocean">How to Set Up a Host Name with DigitalOcean</a></p>
+<p></p>
+              <h3><p>Is FTP installed and how can I install it on my virtual server?</p>
+</h3>
+              <p></p><p>Our servers do not come with FTP pre-installed; 
+however, you can use the following guides from our community to help you
+ get started.</p>
+
+<p>FTP: <a href="https://www.digitalocean.com/community/articles/what-is-ftp-and-how-is-it-used">What is FTP and How is it Used?</a></p>
+
+<p>ProFTPd:
+- <a href="https://www.digitalocean.com/community/articles/how-to-set-up-proftpd-on-ubuntu-12-04">How to Set Up ProFTPd on Ubuntu 12.03</a>
+- <a href="https://www.digitalocean.com/community/articles/how-to-set-up-proftpd-on-centos-6">How to Set Up ProFTPd on CentOS 6</a></p>
+
+<p>vsFTPd:
+- <a href="https://www.digitalocean.com/community/articles/how-to-set-up-vsftpd-on-ubuntu-12-04">How to Set Up vsFTPd on Ubuntu 12.04</a>
+- <a href="https://www.digitalocean.com/community/articles/how-to-set-up-vsftpd-on-centos-6--2">How to Set Up vsFTPd con CentOS 6</a></p>
+<p></p>
+              <h3><p>Why is the GeoIP information for my droplet wrong?</p>
+</h3>
+              <p></p><p>The GeoLocation of all IPs are handled by 
+different governing bodies that issue those IPs for use by ISPs. A 
+mismatch can happen between the time we receive a new IP block and the 
+time the organizations responsible for updating the geography of IPs 
+updates their databases. </p>
+
+<p>As these organizations move at their own pace, we have little 
+influence over the speed at which they make geographic changes when IP 
+blocks are reallocated between organizations. If there is a discrepancy 
+it usually means that it is a new assignment and will soon be updated. </p>
+<p></p>
+              <h3><p>Is GRUB supported?</p>
+</h3>
+              <p></p><p>Grub is not supported. The kernel and initrd are
+ specified by the hypervisor upon boot. We are currently working on a 
+kernel management system that will allow you to pull in all of your 
+kernels from a virtual server and then select the one you'd like to boot
+ from.</p>
+<p></p>
+              <h3><p>How do I login to my VPS? How do I create a droplet?</p>
+</h3>
+              <p></p><p>We've put together a "getting started guide" for
+ first time users in our community section on how to login to your 
+virtual server.</p>
+
+<p>Check out this tutorial for help: <a href="https://www.digitalocean.com/community/articles/how-to-create-your-first-digitalocean-droplet-virtual-server">How to Create Your First DigitalOcean Droplet Virtual Server</a></p>
+<p></p>
+              <h3><p>How can I use PuTTY to connect to my droplet?</p>
+</h3>
+              <p></p><p>You will need to use PuTTY to connect to your droplet via SSH.</p>
+
+<p>Please follow this guide on how to login with PuTTY: <a href="https://www.digitalocean.com/community/articles/how-to-log-into-your-droplet-with-putty-for-windows-users">How to Log into Your Droplet with PuTTY for Windows Users</a></p>
+<p></p>
+              <h3><p>How can I set up a firewall?</p>
+</h3>
+              <p></p><p>Please check out this article: <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-firewall-using-ip-tables-on-ubuntu-12-04">How to Set Up a Firewall Using IP Tables on Ubuntu 12.04</a></p>
+<p></p>
+              <h3><p>How can I set up a PPTP VPN Tunnel?</p>
+</h3>
+              <p></p><p>If you would like to setup internal IP addresses
+ between your droplets, you can setup a PPTP VPN Tunnel between them 
+using this tutorial: <a href="https://www.digitalocean.com/community/articles/how-to-setup-your-own-vpn-with-pptp">How to Set Up Your Own VPN with PPTP</a></p>
+<p></p>
+              <h3><p>How can I connect to my droplet with VNC?</p>
+</h3>
+              <p></p><p>Even though we do not provide GUI access to all of our droplets, we have a community article on how to set up XFCE on Ubuntu:</p>
+
+<p><a href="https://www.digitalocean.com/community/articles/how-to-setup-vnc-for-ubuntu-12">How to Set Up VNC for Ubuntu 12</a></p>
+
+<p>We recommend having at least 1GB of Ram available to run X11</p>
+<p></p>
+              <h3><p>How can I change my IP address?</p>
+</h3>
+              <p></p><p>You can use the following procedure to get a new IP address for your droplet:</p>
+
+<ol>
+<li>Create a snapshot image of your droplet from the control panel.</li>
+<li>Create a new droplet from your snapshot.</li>
+<li>Destroy your original droplet.</li>
+</ol>
+<p></p>
+              <h3><p>How are PTR and Reverse DNS records configured?</p>
+</h3>
+              <p></p><p>rDNS/PTR records are automatically configured for your IPs based on the hostname that you provide for your droplet.</p>
+<p></p>
+              <h3><p>How can I access MySQL from a remote computer?</p>
+</h3>
+              <p></p><p>If you are connecting to MySQL remotely, you 
+will have to enable MySQL to listen on the public interface of your 
+droplet as well as the loopback.</p>
+
+<p>Typically, this is done in "/etc/mysql/my.cnf" by changing the line "bind<em>address=127.0.0.1" to "bind</em>address=0.0.0.0"</p>
+
+<p>However, please note that this will allow anyone to connect to your 
+MySQL server, so you should make sure that you have secure passwords on 
+all accounts and consider creating firewall rules to prevent unwanted 
+connections.</p>
+
+<p>Here is a community question that may be of further help: <a href="https://www.digitalocean.com/community/questions/how-to-allow-remote-mysql-database-connection">How to Allow Remote MySQL Database Connection</a></p>
+<p></p>
+              <h3><p>Why is my domain not resolving?</p>
+</h3>
+              <p></p><p>DNS can take time to propagate. Also, your local
+ nameserver will cache results; therefore, you must flush your local 
+nameserver cache in order to effectively debug DNS updates. </p>
+
+<p>Alternatively, you can use the command line tool 'dig' to check the updates. </p>
+
+<p>For information on how to debug DNS, see this article: <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-host-name-with-digitalocean">How to Set Up a Host Name with DigitalOcean</a></p>
+<p></p>
+              <h3><p>Is my VPS IP address static?</p>
+</h3>
+              <p></p><p>A virtual server's IP address is static and 
+reserved for your virtual machine until you destroy it. Rebuilding a 
+virtual server retains the same IP that you had initially.</p>
+
+<p>Additionally, our backend will automatically attempt to return an IP 
+address that you have used in the past. Therefore, if you destroy a 
+server and process a create soon after, you will most likely receive the
+ same IP address (although this is not guaranteed).</p>
+<p></p>
+              <h3><p>How do I set an rDNS (reverse DNS) or PTR (pointer) Record?</p>
+</h3>
+              <p></p><p>The rDNS for your droplet's IP is automatically set to the hostname of your droplet as it appears in the control panel.</p>
+
+<p>If you wish to update your rDNS (PTR record) simply rename your droplet in the control panel:</p>
+
+<ol>
+<li>Navigate to the droplet listing.</li>
+<li>Select the droplet to rename.</li>
+<li>Choose the "Settings" tab followed by the "Rename" option.</li>
+<li>Fill out the "New Hostname" field then click the "Rename" button.</li>
+</ol>
+<p></p>
+              <h3><p>Why does my MySQL daemon crash?</p>
+</h3>
+              <p></p><p>The most common reason why MySQL is not running is that it stopped or failed to start as a result of not enough memory.</p>
+
+<p>This can usually be seen by attempting to start the mysql server 
+("service mysql start" on Ubuntu and some other systems) and then 
+reviewing the mysql error log (usually in /var/log/mysql/error.log or 
+similar file path).</p>
+
+<p>A useful program to review the logs one page at a time is "less" – for example: less /var/log/mysql/error.log</p>
+
+<p>If you see memory issues such as "mmap can't allocate" then you can be sure that you are having memory issues.</p>
+
+<p>Potential solutions are:</p>
+
+<ol>
+<li>Upsize to a larger server. We recommend at least a 1GB droplet for any server utilizing a MySQL database.</li>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-configure-virtual-memory-swap-file-on-a-vps">Enable swap</a></li>
+<li>Tuning: Reduce the number of running programs, configure MySQL or other programs to use less RAM</li>
+</ol>
+<p></p>
+          </div>
+          <div class="tab-pane " id="technical-control_panel">
+            <h2 id="">Technical   Control Panel Questions</h2>
+              <h3><p>How can I move my virtual server or make my snapshot available in another datacenter?</p>
+</h3>
+              <p></p><p>You can transfer a snapshot of your Droplet to another datacenter and spin up a new VPS from that image.</p>
+
+<p>You will want to follow these steps:</p>
+
+<ol>
+<li>Put your droplet in an off state by running the command "sudo shutdown -h now"</li>
+<li>Go to Snapshots &gt; enter your snapshot name &gt; Take Snapshot</li>
+<li>Once the snapshot has been taken, go to Images &gt; click on the 
+globe icon (on the same line as the name of your snapshot), and select 
+the region/datacenter you'd like to transfer to.</li>
+<li>Now you will be able to create a new Droplet using this snapshot that was just transferred to the region/datacenter.</li>
+</ol>
+<p></p>
+              <h3><p>There are no sizes available for FastResize. How can I resize?</p>
+</h3>
+              <p></p><p>FastResize is limited to the resources available on the physical hypervisor your server is on.</p>
+
+<p>If there are no resources available, no sizes will be listed on the FastResize Page.</p>
+
+<p>If this is the case, you will need to take the slower method of 
+snapshot &amp; redeployment which is not limited to the same hypervisor:</p>
+
+<ol>
+<li>Make a snapshot </li>
+<li>Destroy your old droplet (this releases the IP) </li>
+<li>Immediately after the delete is finished, create a new droplet, 
+choose the same datacenter, and in the "select images" section switch to
+ "my images" and select your snapshot. This server will almost always 
+capture the IP just released.</li>
+</ol>
+<p></p>
+              <h3><p>How do I start over with a fresh installation?</p>
+</h3>
+              <p></p><p>To restart your droplet with a different 
+operating system, or perform a fresh installation of your current one, 
+follow these easy steps:</p>
+
+<ol>
+<li>Login to the control panel, navigate to your list of droplets, and select the one you wish to destroy or re-deploy.</li>
+<li>Click "Destroy" then "Rebuild" and choose the appropriate operating system from the "Select an Image" menu. </li>
+<li>Finally, click the blue "Rebuild From Image" button.</li>
+</ol>
+
+<ul>
+<li>IMPORTANT: All data on your droplet will be destroyed when it is 
+rebuilt. Remember to backup your data or take snapshots of your work in 
+order to preserve that image. </li>
+</ul>
+
+<p>Your IP will be preserved.</p>
+<p></p>
+              <h3><p>How can I ensure my droplets get put on separate hypervisors?</p>
+</h3>
+              <p></p><p>We do not have the ability for customers to 
+select which hypervisors they are distributed to at the moment. However,
+ if you spin up droplets and provide us with the names of the droplets, 
+we are able to look these up to find out if any of your droplets have 
+landed on the same hypervisor.</p>
+<p></p>
+              <h3><p>How do I change the kernel of my droplet?</p>
+</h3>
+              <p></p><p>To change a kernel of a droplet, you must use the control panel or the API. </p>
+
+<p>In the control panel:</p>
+
+<ul>
+<li>Navigate to your droplet listing</li>
+<li>Choose the droplet </li>
+<li>Select the "Settings" tab and the "Kernel" option</li>
+<li>Note your existing kernel then select a new kernel</li>
+<li>Click on the blue "Change" button</li>
+<li>Shut down your droplet gracefully by using the command "poweroff" in a terminal window with root privileges</li>
+<li>Using the control panel turn on your droplet</li>
+<li>Make sure the droplet boots. If not, go back to the previous kernel 
+and poweroff/power on as above to restore your previous setting.</li>
+</ul>
+
+<p>Additional notes:</p>
+
+<p>Using a 32 bit kernel with a 64bit OS, or a 64bit kernel with a 32bit kernel, or a kernel from another OS is not supported.</p>
+
+<p>Changing a kernel will not change or update your OS.</p>
+
+<p>If your desired kernel is not listed, please add it as a suggestion on our <a href="http://digitalocean.uservoice.com/forums/136585-digital-ocean">user voice forum</a> stating the linux distribution, the version requested, and the feature it has that you are in need of.</p>
+
+<p>The "DO-recovery" kernels are intended for use after instructed in a Support Ticket.</p>
+<p></p>
+              <h3><p>How can I transfer a droplet or snapshot to another user or account?</p>
+</h3>
+              <p></p><p>We are unable to transfer droplets between 
+accounts, but we can transfer snapshots. This would allow you to 
+recreate the server in another account with the only difference being 
+the IP address.</p>
+
+<p>To transfer a snapshot to another user, here are the steps to take: </p>
+
+<ul>
+<li>From the control panel select Images. Select the Transfer Snapshot icon and enter the email address of the recipient</li>
+<li>Upon clicking the transfer button, the sender will notice their icon
+ turns blue, indicating that the snapshot transfer is pending. When the 
+recipient accepts the transfer the sender will no longer have access to 
+the image </li>
+<li>The recipient will have a new section on the Images page titled 
+Pending Snapshot Transfer Requests. Here you'll be able to accept or 
+decline the transfer request. If approved, the snapshot will disappear 
+from the sender's account, and will be added to your list of Snapshots 
+where you'll have full control over the image</li>
+</ul>
+<p></p>
+              <h3><p>How do I safely power cycle (reboot) my server?</p>
+</h3>
+              <p></p><p>Rebooting your virtual server is a simple two-step process:</p>
+
+<ol>
+<li>Login to your droplet as root and execute the "poweroff" or 
+"shutdown -h now" command. This will shut down your operating system, 
+flush any pending changes to the disk, and then terminate power to your 
+server.</li>
+<li>Visit the control panel and select the option to power on your droplet.</li>
+</ol>
+
+<ul>
+<li>IMPORTANT: Using the "power off" switch in the control panel to shut
+ down your VPS is similar to pulling the plug on a running computer and 
+may lead to drive corruption [as the disk cache is not able to be 
+properly flushed].</li>
+</ul>
+
+<p>It is recommended that you connect to the console after booting in case the boot process fails. For any issues, please <a href="https://cloud.digitalocean.com/support">open a support ticket</a> and we'll be happy to assist you any way we can.</p>
+<p></p>
+              <h3><p>Why did changing my kernel not change my operating system?</p>
+</h3>
+              <p></p><p>A kernel and an operating system, while linked, are actually two separate things.</p>
+
+<p>The Kernel is the link between software and hardware, and the 
+Operating system are the set of software that create the interactive 
+environment in which you operate. </p>
+
+<p>Changing a kernel will not change your operating system - and if you 
+change the kernel to something that doesn't match your operating system,
+ it will quite possibly break your system.</p>
+
+<p>There is no practical way to change your operating system of a running computer and keep your files intact. </p>
+
+<p>You could create a new server entirely, and use a utility like 'rsync' to copy over relevant data from one server to another. </p>
+
+<p>However, if your data on your server isn't important, or you've 
+already backed it up somewhere accessible, you could rebuild your server
+ from a new image by doing the following: </p>
+
+<ul>
+<li>Log into the control panel</li>
+<li>Click the droplet</li>
+<li>Select the destroy tab</li>
+<li>Use the "Rebuild" option, and select the image you want to boot from (ex: a CentOS one) </li>
+<li>Click "rebuild from image"</li>
+</ul>
+
+<p>This will wipe out your existing file system and install a new image and kernel.</p>
+<p></p>
+              <h3><p>What is my droplet limit? How do I raise it?</p>
+</h3>
+              <p></p><p>You can view your Droplet limit in the control 
+panel by navigating over to the settings section accessible via the gear
+ icon in the lower left corner of the control panel. </p>
+
+<p>We employ Droplet limits to help us curb abuse and fraud in the cloud. You can increase your limit at anytime by <a href="https://cloud.digitalocean.com/support">opening a support ticket</a> and after review, we'll be happy to increase your limit.</p>
+<p></p>
+              <h3><p>What is the difference between Fast-Resize and Migrate-Resize?</p>
+</h3>
+              <p></p><p>Fast resize increases or decreases your CPU and 
+RAM according to the new plan selected [but does not resize the disk]. 
+The benefit is the resize is processed with a simple reboot: shutdown 
+your server from the command line, select the new size, and then click 
+"Boot" from the control panel.</p>
+
+<p>The migrate-resize will move your virtual machine to another 
+hypervisor and also resize the disk in the process. This process is 
+longer and can take up to 35-40 minutes, depending on the size of your 
+virtual server and how much diskspace is being utilized. </p>
+
+<p>For more information, see this tutorial: <a href="https://www.digitalocean.com/community/articles/how-to-resize-droplets-using-snapshots">How to Resize Droplets Using Snapshots</a></p>
+
+<p>Please note that once you resize to a larger disk, you will no longer
+ be able to select a smaller plan for a fast-resize. This is because 
+there will be a disk mismatch and we do not currently support shrinking a
+ virtual server's disk.</p>
+<p></p>
+              <h3><p>How can I rename my droplet?</p>
+</h3>
+              <p></p><p>To rename your droplet, follow these steps:</p>
+
+<ul>
+<li>Log into <a href="https://cloud.digitalocean.com/">your account</a></li>
+<li>Click the name of the droplet you wish to rename</li>
+<li>Click "Settings"</li>
+<li>Click "Rename"</li>
+<li>Where it says "New Hostname," click and type a Fully Qualified Hostname</li>
+<li>Click the blue "Rename" button</li>
+</ul>
+<p></p>
+              <h3><p>Why did FastResize not change my disk size?</p>
+</h3>
+              <p></p><p>To make the process fast, the "FastResize" does not change disk size, only RAM and CPU, as it performs a simple reboot.</p>
+
+<p>If you need to change disk size, use the following procedure:</p>
+
+<ol>
+<li>Make a snapshot</li>
+<li>Destroy your old droplet (this releases the IP) </li>
+<li>Immediately after the delete is finished, create a new droplet of 
+the desired size using the snapshot as the starting image, and choose 
+the same datacenter. This server will almost always capture the IP just 
+released</li>
+</ol>
+<p></p>
+          </div>
+          <div class="tab-pane " id="technical-backup">
+            <h2 id="">Technical   Backup Questions</h2>
+              <h3><p>How can I enable backups on my existing droplet?</p>
+</h3>
+              <p></p><p>At the moment, you can only enable backups when creating a new server.</p>
+
+<p>To enable automatic backups on an existing server, you'll need to follow these instructions:</p>
+
+<ol>
+<li>Create a snapshot of your server</li>
+<li>Delete your server to release the IP</li>
+<li>Immediately after the delete is finished, create a new droplet, 
+choose the same datacenter, and in the "select images" section switch to
+ "my images" and select your snapshot. Then check the "Enable Backups" 
+box. This server will almost always capture the IP just released.</li>
+</ol>
+<p></p>
+              <h3><p>How can I recover from an unbootable droplet?</p>
+</h3>
+              <p></p><p>You have two options:
+1. Attempt Recovery with Fsck Kernel
+2. Attempt Recovery with a Recovery ISO</p>
+
+<p>Read about it here: <a href="https://www.digitalocean.com/community/articles/how-to-recover-from-file-system-corruption-using-fsck-and-a-recovery-iso">How to Recover from File System Corruption Using Fsck and a Recovery ISO</a></p>
+
+<p>Please <a href="https://cloud.digitalocean.com/support">let us know</a> if you need to have the ArchISO set as the boot device on your droplet.</p>
+<p></p>
+              <h3><p>How much do you charge for backups?</p>
+</h3>
+              <p></p><p>The pricing for backups is 20% of the droplet; 
+so for a $5 droplet - backup is $1 per month.  For a $20 droplet - 
+backup is $4 per month.</p>
+<p></p>
+              <h3><p>How do I add swap to prevent resource crashes?</p>
+</h3>
+              <p></p><p>By default the virtual server is not configured 
+with swap since it degrades the Solid State Drives, which can 
+occasionally cause a process to be killed. </p>
+
+<p>To correct this issue, you can add swap by following this guide: <a href="https://www.digitalocean.com/community/articles/how-to-configure-virtual-memory-swap-file-on-a-vps">How to Configure Virtual Memory Swap File on a VPS</a></p>
+
+<p>If that doesn't help, you may want to consider resizing to a larger 
+droplet and see if that prevents your virtual server or process from 
+crashing.</p>
+<p></p>
+              <h3><p>How can I download a backup?</p>
+</h3>
+              <p></p><p>Unfortunately you are unable to store a snapshot or backup outside of our environment. </p>
+
+<p>If you are wanting to backup your data, we recommend taking a look at these community articles:</p>
+
+<ul>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-create-an-off-site-backup-of-your-site-with-rsync-on-centos-6">How to Create an Off-site Backup of Your Site with Rsync on CentOS 6</a></li>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-choose-an-effective-backup-strategy-for-your-vps">How to Choose an Effective Backup Strategy for Your VPS</a></li>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-use-backuppc-to-create-a-backup-server-on-an-ubuntu-12-04-vps">How to Use BackupPC to Create a Backup Server on an Ubuntu 12.04 VPS</a></li>
+</ul>
+<p></p>
+              <h3><p>How can I repair my filesystem?</p>
+</h3>
+              <p></p><p>You can repair your filesystem using the following process:</p>
+
+<ol>
+<li>Power off your droplet and change your kernel to the DO-recovery-static-fsck image.</li>
+<li>Boot your droplet and access it via the console in the control panel.</li>
+<li>Run the command "fsck /dev/vda"</li>
+<li>Answer yes to any requests to repair errors</li>
+<li>Power off your droplet, change the kernel back to the original, and reboot</li>
+</ol>
+<p></p>
+              <h3><p>How can I re-deploy my server?</p>
+</h3>
+              <p></p><p>You can re-deploy your droplet while maintaining the same IP using the following method:</p>
+
+<ol>
+<li>Create snapshot</li>
+<li>Delete server to release IP</li>
+<li>Create new server of the desired size in the same datacenter. In the
+ "select images" section switch to "my images" and select your snapshot.
+ </li>
+</ol>
+
+<p>Once you submit this form, the server captures the IP just released.</p>
+<p></p>
+              <h3><p>How can I rebuild my droplet?</p>
+</h3>
+              <p></p><p>You can most definitely rebuild your current 
+droplet. In the control panel you can use the following process to 
+rebuild your droplet:</p>
+
+<ol>
+<li>Click on your droplet</li>
+<li>Click on the destroy tab</li>
+<li>Click on the "Rebuild" sub-tab</li>
+<li>Either click "rebuild from original" or select a different OS image to use and click "Rebuild from image"</li>
+</ol>
+<p></p>
+          </div>
+          <div class="tab-pane " id="IPv6">
+            <h2 id="">I Pv6 Questions</h2>
+              <h3><p>How many IP address get allocated to each IPv6 droplet?</p>
+</h3>
+              <p></p><p>Each droplet is allocated 16 IPv6 addresses. You
+ can read more about how to enable the IP addresses on your server here:
+ 
+https://www.digitalocean.com/community/tutorials/how-to-add-additional-ipv6-addresses-to-your-droplet</p>
+<p></p>
+              <h3><p>I set up IPv6. Why isn’t it working?</p>
+</h3>
+              <p></p><p>This is most likely due to your internet service
+ provider not supporting IPv6. In order for IPv6 to work, it needs to be
+ available on both sides. Both the droplet and the computer you are 
+trying to access it from must have support for it. In order to check if 
+IPv6 is working on your end, please visit: http://ipv6-test.com/</p>
+<p></p>
+              <h3><p>I don’t have IPv6 at home, how can I test it out?</p>
+</h3>
+              <p></p><p>You can test the IPv6 connection from within 
+your droplet by logging into your server and trying to reach the Google 
+IPv6 name server with the following command: ping6 2001:4860:4860::8888 </p>
+
+<p>If this is successful, it means that your IPv6 is configured 
+correctly. It will be able to communicate with other sites and servers 
+that have IPv6 enabled throughout the internet. You can also connect to 
+your server through an IPv6 tunnel. </p>
+
+<p>DigitalOcean is directly peered with Hurricane electric for best IPv6 over tunnel performance: https://tunnelbroker.net</p>
+<p></p>
+              <h3><p>Are there any security implications associated with enabling IPv6 on a droplet?</p>
+</h3>
+              <p></p><p>In Linux, IPv6 security is maintained separately
+ from IPv4. For example, iptables only maintains firewall rules for IPv4
+ addresses but it has an IPv6 counterpart called ip6tables, which can be
+ used to maintain firewall rules for IPv6 network addresses.  If your 
+VPS is configured for IPv6, please remember to secure both your IPv4 and
+ IPv6 network interfaces with the appropriate tools. For more 
+information about IPv6 tools, refer to this guide: 
+https://www.digitalocean.com/community/tutorials/how-to-configure-tools-to-use-ipv6-on-a-linux-vps</p>
+<p></p>
+              <h3><p>How do I set up DNS for my IPv6 address?</p>
+</h3>
+              <p></p><p>You can set up the DNS for the IPv6 address by 
+using the AAAA record. You can find more information about setting it up
+ here:   
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean</p>
+<p></p>
+              <h3><p>Can I get IPv6 in NYC? AMS? SFO?</p>
+</h3>
+              <p></p><p>At this time, IPv6 is only available in the 
+Singapore datacenter. There are plans to expand IPv6 to other 
+datacenters in the future, and it will be a standard feature for all new
+ datacenter locations going forward.</p>
+<p></p>
+              <h3><p>How do I request more IPv6 addresses?</p>
+</h3>
+              <p></p><p>At this time, we are allocating 16 addresses to 
+each droplet. In the future, we may consider raising the amount. To 
+provide feedback and request more IP addresses, please let us know your 
+thoughts on our uservoice page 
+https://digitalocean.uservoice.com/forums/136585-digitalocean</p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="getting_started-setup">
+            <h2 id="">Getting Started   Setup Questions</h2>
+              <h3><p>Set Up SSH Keys</p>
+</h3>
+              <p></p><p>SSH keys provide a more secure way of logging 
+into a virtual private server than using a password alone. With SSH 
+keys, users can log into a server without a password. This tutorial 
+explains how to generate, use, and upload an SSH Key Pair. <a href="https://www.digitalocean.com/community/articles/how-to-set-up-ssh-keys--2">Read More</a></p>
+<p></p>
+              <h3><p>Deploy and secure your server</p>
+</h3>
+              <p></p><p>You can get your server up and running quickly 
+with the following tutorials. These will take you from creating a server
+ from scratch to having your website set up. <a href="https://www.digitalocean.com/community/articles/an-introduction-to-securing-your-linux-vps">Read More</a></p>
+<p></p>
+              <h3><p>What is Cloud Hosting?</p>
+</h3>
+              <p></p><p>Cloud hosting describes a method of configuring 
+servers in a flexible way to allow for the most affordable, scalable, 
+and reliable web infrastructure. <a href="https://digitalocean.com/what-is-cloud-hosting">Read More</a></p>
+<p></p>
+              <h3><p>Launch Your Site on a New Ubuntu 12.04 Server with LAMP, SFTP, and DNS</p>
+</h3>
+              <p></p><p>This article will take you from a fresh, new 
+server to an online, working site. There are a variety of tutorials in 
+our Community that will help you accomplish each step in the process. 
+The following article will combine the relevant articles into a 
+cohesive, step-by-step guide to set up your personal site on an Ubuntu 
+server. <a href="https://www.digitalocean.com/community/articles/how-to-launch-your-site-on-a-new-ubuntu-12-04-server-with-lamp-sftp-and-dns">Read More</a></p>
+<p></p>
+              <h3><p>Create Your First DigitalOcean Server</p>
+</h3>
+              <p></p><p>This tutorial will walk you through the steps 
+needed to make your first DigitalOcean droplet. These include choosing 
+your server's size, location, and linux distribution. It will also show 
+you how to log into your server. <a href="https://www.digitalocean.com/community/articles/how-to-create-your-first-digitalocean-droplet-virtual-server">Read More</a></p>
+<p></p>
+              <h3><p>Install Git on Ubuntu 12.04</p>
+</h3>
+              <p></p><p>This tutorial covers how to install git on 
+ubuntu 12.04 via apt-get and from the source. Git is a distributed 
+version control system released to the public in 2005. The program 
+allows for non-linear development of projects. <a href="https://www.digitalocean.com/community/articles/how-to-install-git-on-ubuntu-12-04">Read More</a></p>
+<p></p>
+              <h3><p>Set Up Your Domain Name</p>
+</h3>
+              <p></p><p>This article walks you through setting up the 
+DNS for your site. This includes steps to set up A records, point your 
+nameservers, and information about MX records. <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-host-name-with-digitalocean">Read More</a></p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="getting_started-learn">
+            <h2 id="">Getting Started   Learn Questions</h2>
+              <h3><p>Get Familiar with DNS</p>
+</h3>
+              <p></p><p>DNS, or the Domain Name System, is an integral 
+part of how the internet functions today. However, the way that DNS 
+works is often quite mysterious for new administrators. In this guide, 
+we discuss some of the common terminology and concepts that are involved
+ in DNS configuration. <a href="https://www.digitalocean.com/community/articles/an-introduction-to-dns-terminology-components-and-concepts">Read More</a></p>
+<p></p>
+              <h3><p>View and Configure Linux Logs</p>
+</h3>
+              <p></p><p>Linux and the applications that run on it can 
+generate all different types of messages, which are recorded in various 
+log files. Linux uses a set of configuration files, directories, 
+programs, commands and daemons to create, store and recycle these log 
+messages. Knowing where the system keeps its log files and how to make 
+use of related commands can therefore help save valuable time during 
+troubleshooting. <a href="https://www.digitalocean.com/community/articles/how-to-view-and-configure-linux-logs-on-ubuntu-and-centos">Read More</a></p>
+<p></p>
+              <h3><p>Create an SSL Certificate for your site</p>
+</h3>
+              <p></p><p>This tutorial explains how to create a 
+self-signed SSL certificate, how to add it to your server, and how to 
+configure the SSL file to display the certificate to the world. An SSL 
+certificate is a way to encrypt a site's information and create a more 
+secure connection. Certificate Authorities can issue SSL certificates 
+that verify the server's details, while a self-signed certificate has no
+ 3rd party corroboration. This tutorial is written for Apache on an 
+Ubuntu server. <a href="https://www.digitalocean.com/community/articles/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-12-04">Read More</a></p>
+<p></p>
+              <h3><p>Learn More About Git</p>
+</h3>
+              <p></p><p>Git is a very useful piece of software to help 
+streamline development for programming projects. It comes with no 
+language or file structure requirements, leaving it open for developers 
+to decide how they want to structure their workflow. This tutorial 
+covers creating your git workspace and pushing your changes. <a href="https://www.digitalocean.com/community/articles/how-to-use-git-effectively">Read More</a></p>
+<p></p>
+              <h3><p>Set Up IP Tables</p>
+</h3>
+              <p></p><p>This tutorial covers setting up a very simple 
+firewall with IP Tables on an Ubuntu Droplet. The IP table rules come 
+from a series of options that can be combined to create each specific 
+process. Each packet that crosses the firewall is checked by each rule 
+in order. As soon as it matches a rule, the packet follows the 
+associated action; otherwise, it proceeds down the line. You should be 
+able to copy and paste many of the rules in the article. <a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-firewall-using-ip-tables-on-ubuntu-12-04">Read More</a></p>
+<p></p>
+              <h3><p>Customize Your Bash Prompt</p>
+</h3>
+              <p></p><p>When you begin to spend much of your time on the
+ command line, your shell environment becomes very important. One thing 
+many people like to customize is their Bash prompt. In this article, we 
+discuss how you can personalize and add color to your Bash prompt so 
+that the information you need is always available. <a href="https://www.digitalocean.com/community/articles/how-to-customize-your-bash-prompt-on-a-linux-vps">Read More</a></p>
+<p></p>
+          </div>
+          <div class="tab-pane " id="community">
+            <h2 id="">Community Questions</h2>
+              <h3><p>How do you choose what to write about in the community articles?</p>
+</h3>
+              <p></p><p>The community articles are written on various 
+topics that relate to installing, configuring, or optimizing various 
+open source programs on Ubuntu, Debian, CentOS, Fedora, or Arch. If you 
+have any specific topics that you'd like to see written about, we always
+ appreciate <a href="https://www.digitalocean.com/community/articles/digitalocean-community-article-suggestions-and-ideas">suggestions</a>.</p>
+<p></p>
+              <h3><p>How can I contribute to the DigitalOcean Community?</p>
+</h3>
+              <p></p><p>There are many ways to contribute to the DigitalOcean community. One big way to contribute is to <a href="https://www.digitalocean.com/write-for-digitalocean">write an article</a>
+ for the DigitalOcean knowledgebase. Other ways to contribute are to 
+answer user questions in the FAQ, help debug issues in the IRC, or write
+ an integration with our API.</p>
+<p></p>
+              <h3><p>What is the DigitalOcean Community?</p>
+</h3>
+              <p></p><p>The DigitalOcean community is comprised of the 
+tutorial collection, a Q&amp;A section, the DigitalOcean IRC channel, 
+and all of the integrations built on the DigitalOcean API. It is a 
+platform developed by DigitalOcean and its users to create an 
+accessible, easy-to-use knowledgebase that provides developers with the 
+information they need to successfully maneuver and set up their server.</p>
+<p></p>
+          </div>
+      </section>
+    </div>
+  </section>
+
+
+</div>
+</div>
+</div>
+</div>
+
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1010666955;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<div style="display:none">
+  <script type="text/javascript" src="support_files/conversion.js">
+  </script><iframe name="google_conversion_frame" title="Google conversion frame" src="support_files/a.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="13" scrolling="no" width="300">&lt;img
+ height="1" width="1" border="0" alt="" 
+src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1010666955/?frame=0&amp;random=1405747452131&amp;cv=7&amp;fst=1405747452131&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=768&amp;u_w=1280&amp;u_ah=738&amp;u_aw=1280&amp;u_cd=24&amp;u_his=8&amp;u_tz=480&amp;u_java=false&amp;u_nplug=44&amp;u_nmime=143&amp;frm=0&amp;url=https%3A//cloud.digitalocean.com/support&amp;ref=https%3A//cloud.digitalocean.com/billing"
+ /&gt;</iframe>
+</div>
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1010666955/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+  <script type="text/javascript" src="support_files/pix.js"></script>
+  <script src="support_files/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+  twttr.conversion.trackPid('l4etp');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4etp&p_id=Twitter" />
+  <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4etp&p_id=Twitter" />
+</noscript>
+
+
+
+<div class="helper-bottom-right">
+<a data-original-title="Help us improve! Leave Feedback" class="helpers feedback" data-toggle="tooltip" href="http://digitalocean.uservoice.com/forums/136585-digital-ocean" target="_blank" title=""></a>
+</div>
+
+
+<script>
+  //<![CDATA[
+    $(document).ready(function() {
+      function status_callback(data) {
+        if (data['events'].length > 0) {
+          $.each(data['events'], function(idx, ev) {
+            if ($.cookie('status_event_' + ev.id) === undefined) {
+              var el = $('<div id="status_event_' + ev.id + '" class="warning flash notices"><div data-eventid="'+ ev.id +'" class="button">X</div><div class="button show_more" data-target="#EVENT'+ev.id+'" data-toggle="collapse">Show More</div><div class="title">'+ev.title+'</div><div class="update created_at">'+ev.created_at+'</div><div class="updates collapse" id="EVENT'+ev.id+'"></div>');
+              $.each(ev['updates'], function(idx, update) {
+                el.find(".updates").append('<br/><div class="update">'+update['update'].contents+'</div><div class="update created_at">'+update['update'].created_at+'</div>');
+              });
+              el.html(el.html().replace(/\n/g, '<br>'));
+              $('.contents').prepend(el);
+            }
+          });
+        }
+      }
+    
+      $('div[data-eventid]').live("click", function() {
+        var status_event_id = $(this).attr('data-eventid');
+    
+        $('#status_event_' + status_event_id).hide();
+    
+        //set a cookie to persist this state
+        $.cookie('status_event_' + status_event_id, 'hidden', { expires: 7, path: '/' });
+      });
+    
+      $('.notices .updates').live('hidden', function() {
+        $(this).prevAll(".show_more").text("Show More");
+      });
+    
+      $('.notices .updates').live('shown', function() {
+        $(this).prevAll(".show_more").text("Show Less");
+      });
+    
+      $.getJSON('https://status.digitalocean.com/api/v1/events/unresolved.js?callback=?', status_callback);
+    });
+  //]]>
+</script>
+
+<div class="modal" id="sudo-modal" style="display: none">
+<div class="modal-container">
+<div class="modal-header">
+<a href="#" class="close" data-dismiss="sudo-modal"> </a>
+<h3>Confirm Login</h3>
+</div>
+<div class="modal-body">
+<span class="modal-error" style="display: none">
+Sign in failed. Please try again.
+</span>
+<p>
+</p><p>Please confirm your password for bj_liwei@yahoo.com.<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script></p>
+<p></p>
+<form accept-charset="UTF-8" action="/login/refresh" class="vertical-form" data-remote="true" id="edit_user_407242" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="_method" value="put" type="hidden"><input name="authenticity_token" value="lTy911DKDYHjgEFdv6t0r1ClmNLGICOJT+50Hw7BkkA=" type="hidden"></div><input autocomplete="off" id="user_password" label="false" name="user[password]" placeholder="Password" size="30" type="password">
+<input name="commit" value="Confirm" type="submit">
+</form>
+
+</div>
+</div>
+</div>
+
+</body></html>
