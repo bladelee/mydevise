@@ -6,6 +6,9 @@ class AppsController < ApplicationController
   # GET /apps.json
   def index
     @apps = App.all
+    @groups = Group.all
+    @groupprops = Groupprop.all
+    @groupclients = Groupclient.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -44,6 +47,36 @@ class AppsController < ApplicationController
   # POST /apps.json
   def create
     @app = App.new(params[:app])
+
+    @group = Group.new
+    @group.description = params[:app][:name]
+    @group.save
+
+    @groupprop = Groupprop.new
+    @groupprop.groupName = params[:app][:name]
+    @groupprop.name = 'sharedRoster.displayName'
+    @groupprop.propValue = params[:app][:name]
+    @groupprop.save
+    @groupprop = Groupprop.new
+    @groupprop.groupName = params[:app][:name]
+    @groupprop.name = 'sharedRoster.groupList'
+    @groupprop.propValue = ''
+    @groupprop.save
+    @groupprop = Groupprop.new
+    @groupprop.groupName = params[:app][:name]
+    @groupprop.name = 'sharedRoster.showInRoster'
+    @groupprop.propValue = 'onlyGroup'
+    @groupprop.save
+
+    @groupclient = Groupclient.new
+    @groupclient.groupName = params[:app][:name]
+    @groupclient.username = ''
+    @groupclient.administrator = 1
+    @groupclient.save
+
+    @role = Role.new
+    @role.name = params[:app][:name]
+    @role.save
 
     respond_to do |format|
       if @app.save

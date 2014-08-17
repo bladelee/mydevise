@@ -1,16 +1,4 @@
 zh-CN:
-  activerecord:
-    models :
-      client: 'Client'
-    attributes:
-      client:
-          name: ' 名字'
-          email: ' 电子邮件 '
-          plainPassword: '密码'
-          password: 'Password'
-          sip_user: ' SIP 账号'
-          sip_pass: ' SIP 密码 '
-
   date:
     abbr_day_names:
     - 日
@@ -206,5 +194,6 @@ zh-CN:
   activemodel:
     errors:
       <<: *errors
-
-  name: ' 名字'
+  activerecord:
+      errors:
+        <<: *errors

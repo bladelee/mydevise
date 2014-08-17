@@ -1,4 +1,6 @@
 class ClientsController < ApplicationController
+  layout "sdkuser"
+
   # GET /clients
   # GET /clients.json
   def index

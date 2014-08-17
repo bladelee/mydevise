@@ -24,3 +24,10 @@
         password: 'Password'
         sip_user: ' SIP 账号'
         sip_pass: ' SIP 密码 '
+      app:
+       internal_auth: "内部认证"
+       name: "应用名称"
+       outer_auth_server: "认证服务器地址"
+       type_interphone: "语音对讲"
+       type_message:  "语音留言"
+       created_at: "创建时间"

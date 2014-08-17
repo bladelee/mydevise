@@ -42,3 +42,71 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_app_path,
             :class => 'btn btn-primary' %>
+
+
+<%- model_class = Group -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:groupName) %></th>
+    <th><%= model_class.human_attribute_name(:description) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @groups.each do |app| %>
+      <tr>
+        <td><%= app.groupName %></td>
+        <td><%= app.description %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%- model_class = Groupprop -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:groupName) %></th>
+    <th><%= model_class.human_attribute_name(:name) %></th>
+    <th><%= model_class.human_attribute_name(:propValue) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @groupprops.each do |app| %>
+      <tr>
+        <td><%= app.groupName %></td>
+        <td><%= app.name %></td>
+        <td><%= app.propValue %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%- model_class = Groupclient -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:groupName) %></th>
+    <th><%= model_class.human_attribute_name(:username) %></th>
+    <th><%= model_class.human_attribute_name(:administrator) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @groupclients.each do |app| %>
+      <tr>
+        <td><%= app.groupName %></td>
+        <td><%= app.username %></td>
+        <td><%= app.administrator %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
