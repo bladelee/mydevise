@@ -2,4 +2,20 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  activerecord :
+    models :
+      client: 'Client'
+    attributes:
+      client:
+        name: ' Name'
+        email: ' E-Mail '
+        plainPassword: 'Password'
+        password: 'Password'
+        password_confirmation: ' Password Confirmation '
+        sip_user: ' User SIP Account '
+        sip_pass: ' SIP password '
+        balance : ' Balance'
+        public_carrier_id: ' External Gateway '
+        max_calls : ' Narrow Channel '
+        proxy_media : 'Proxy Media (RTP ) '
+        bypass_media: ' Bypass Media (RTP ) ( signaling only) '

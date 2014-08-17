@@ -2,6 +2,10 @@
 
 <table>
   <tr>
+    <th><%=  Client.human_attribute_name("name") %></th>
+    <th><%=  Client.human_attribute_name('plainPassword') %></th>
+    <th><%= Client.human_attribute_name('sip_user') %></th>
+    <th><%=  Client.human_attribute_name('sip_pass') %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +13,10 @@
 
 <% @clients.each do |client| %>
   <tr>
+    <td><%= client.name %></td>
+    <td><%= client.plainPassword %></td>
+    <td><%= client.sip_user %></td>
+    <td><%= client.sip_pass %></td>
     <td><%= link_to 'Show', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>

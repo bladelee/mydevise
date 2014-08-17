@@ -1,7 +1,7 @@
 Mydevise::Application.routes.draw do
   resources :apps
 
-
+  resources :clients
   devise_for :sdkusers
 
  # devise_for :users
